@@ -23,9 +23,7 @@ html, body {
 .header {
 }
 .header__top {
-    
 }
-
 .header__top-box {
     display: flex;
     justify-content: space-between;
@@ -102,70 +100,94 @@ html, body {
 .header__body {
 }
 .header__body-box {
-    color: #1E1B1B;
-}
-.header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+}
+.header__content {
+    margin-right: 21.13px; 
 }
 .header__body-title {
     font-weight: 800;
     line-height: 84.532px;
     font-size: 64.405px;
     max-width: 630px;
+    color: #1E1B1B;
     
 }
-.header__body-button {
-    display: flex;
+.header__btn {
+    display: inline-flex;
+    margin-top: 31.8px;
+
+}
+.header__btn-button {
     padding: 16.101px 40.253px;
+    margin-bottom: 48.51px;
     align-items: flex-start;
     border-radius: 12.076px;
     background: #FF6433;
     color: #ffff;
-    
+    font-size: 18.114px;
+    font-weight: 600;
+    line-height: 175%; 
 }
-.header__body-button:hover{
+.header__btn-button:hover{
     transform: scale(1.06);
     transition: 0.4s;
     
 }
-.header__body-play {
-    font-family: Roboto;
-    font-weight: 500;
+.header__btn-play {
     display: inline-flex;
     align-items: center;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #1E1B1B;
+    padding-left: 31.49px;
+    margin-bottom: 48.51px;
 }
-.header__body-play svg {
+.header__btn-play svg {
     margin-right: 8px;
     
 }
-.header__body-work {
+.header__open {
+    color: #1E1B1B;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+.header__open::before {
+    content: "";
+    display: block;
+    background: url(../images/icons/clock.svg) no-repeat;
+    margin-right: 13.13px;
+    width: 31.133px;
+    height: 31.133px;
+    flex-shrink: 0; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header__open-work {
     font-size: 16.101px;
     font-weight: 500;
     line-height: 24.152px;
     color: #939191;
+    margin-left: 44.263px;
     
 }
-.header__body-time{
+.header__open-time{
     font-size: 18.114px;
     font-weight: 600;
     line-height: 175%;
+    margin-left: 44.263px;
 }
 
+.header__img {
+    margin-top: 76px;
+}
 .header__img-main {
-    padding-top: 76px;
-
-}
-.header__img-service {
-    font-size: 24.152px;
-    font-weight: 600;
-    line-height: 36.228px;
     
-}
-.header__img-rating {
-    font-size: 24.152px;
-    font-weight: 600;
-    line-height: 36.228px;
+
 }
